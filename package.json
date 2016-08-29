@@ -1,6 +1,6 @@
 {
   "name": "nodejs-stserver",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "a static server by nodejs",
   "main": "index.js",
   "bin": {
