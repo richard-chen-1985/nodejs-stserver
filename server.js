@@ -5,6 +5,11 @@ var libmime = require('mime');
 var app = express();
 
 module.exports = function(config) {
+    app.all('*', function (req, res, next) {
+        res.header("Access-Control-Allow-Origin", "*");
+        next();
+    });
+    
     app.use(function(req, res, next) {
         var url = req.originalUrl;
         var pathStart,
